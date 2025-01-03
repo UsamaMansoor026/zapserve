@@ -9,9 +9,35 @@
 }
 
 .global-padding {
-  @apply px-16;
+  @apply px-16 md:px-8;
 }
 
 .header-padd-y {
   @apply py-4;
+}
+
+.link-padd {
+  @apply px-4 py-2 text-base duration-150 hover:opacity-50;
+}
+
+nav > ul {
+  @apply md:hidden flex items-center gap-4 z-[9999];
+}
+
+li.active {
+  @apply border-b-2 border-b-white md:border-b-primary;
+}
+
+.showMobNav {
+  @apply flex flex-col fixed right-0 top-0 bottom-0 bg-white text-black pt-16 w-[300px] duration-300;
+  animation: rightToLeft 1.5s;
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

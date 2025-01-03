@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="bg-red-400 global-padding">
+      <main className="global-padding">
         <Routes>
           <Route index element={<Home />} />
           <Route exact path="/about" element={<About />} />
