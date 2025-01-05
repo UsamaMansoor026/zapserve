@@ -8,6 +8,53 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+/* Clouds */
+.flying-cloud {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+
+.cloud1 {
+  animation: fly 25s infinite linear;
+}
+@keyframes fly {
+  0% {
+    right: 0px;
+  }
+
+  97% {
+    opacity: 0.4;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+
+.cloud2 {
+  right: -30px;
+  animation: fly2 20s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes fly2 {
+  0% {
+    right: -30px;
+  }
+
+  97% {
+    opacity: 0.4;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+
 .global-padding {
   @apply px-16 md:px-8;
 }
@@ -40,4 +87,10 @@ li.active {
   to {
     transform: translateX(0);
   }
+}
+
+/* Hero Section */
+.hero {
+  @apply bg-primary text-white duration-200;
+  min-height: 100vh;
 }

@@ -9,44 +9,10 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="global-padding text-white bg-primary">
-      {/* Upper Header Portion */}
-      <div className="flex items-center justify-between">
-        {/* Phone and Email */}
-        <div className="flex items-center gap-9">
-          {/* Phone No */}
-          <div className="flex items-center gap-1.5 text-sm header-padd-y">
-            <p>
-              <FaPhoneAlt />
-            </p>
-            <p className="md:hidden">Call Us: +92-333-3333333</p>
-          </div>
-
-          {/* Email Address */}
-          <div className="flex items-center gap-1.5 text-sm">
-            <p>
-              <MdEmail />
-            </p>
-            <p className="md:hidden">Email: info.zapserve@gmail.com</p>
-          </div>
-        </div>
-
-        {/* Call to action */}
-        <div className="flex items-center gap-1 text-sm cursor-pointer">
-          <p className="flex items-center gap-3">
-            <span className="text-sm">
-              <FaLock />
-            </span>{" "}
-            <span>Login/Signup</span>
-          </p>
-        </div>
-      </div>
-
-      <hr className="bg-[#FFFFFF19] border-none h-[1px] w-[50%] mx-auto my-3 md:w-[70%]" />
-
+    <header className="global-padding py-3 text-white bg-primary">
       {/* Lower Header Portion */}
       <nav className="pb-4 flex items-center justify-between relative">
-        <Link to="/" className="text-3xl">
+        <Link to="/" className="text-3xl font-bold">
           ZapServe
         </Link>
 

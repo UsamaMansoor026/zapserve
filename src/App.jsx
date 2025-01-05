@@ -1,18 +1,20 @@
 import React from "react";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
 import Footer from "./components/Footer";
+import { About, Blog, Contact, Home, Hosting } from "./pages";
 
 const App = () => {
   return (
     <>
       <Header />
-      <main className="global-padding">
+      <main>
         <Routes>
           <Route index element={<Home />} />
+          <Route exact path="/hosting" element={<Hosting />} />
           <Route exact path="/about" element={<About />} />
+          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </main>
 
