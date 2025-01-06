@@ -7,6 +7,7 @@ export default {
         primary: "#1c66de",
       },
       screens: {
+        sm: { max: "570px" },
         md: { max: "991px" },
       },
     },

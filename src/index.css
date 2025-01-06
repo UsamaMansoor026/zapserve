@@ -17,6 +17,7 @@ body {
   position: absolute;
   right: 0;
   z-index: 99;
+  opacity: 0.8;
 }
 
 .cloud1 {
@@ -27,10 +28,6 @@ body {
     right: 0px;
   }
 
-  97% {
-    opacity: 0.4;
-  }
-
   100% {
     right: 110%;
   }
@@ -39,18 +36,57 @@ body {
 .cloud2 {
   right: -30px;
   animation: fly2 20s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 5s;
 }
 @keyframes fly2 {
   0% {
     right: -30px;
   }
 
-  97% {
-    opacity: 0.4;
+  100% {
+    right: 110%;
+  }
+}
+
+.cloud3 {
+  right: -50px;
+  animation: fly3 20s linear infinite;
+  animation-delay: 8s;
+}
+@keyframes fly3 {
+  0% {
+    right: -50px;
   }
 
   100% {
+    right: 110%;
+  }
+}
+
+.cloud4 {
+  right: -50px;
+  animation: fly4 25s linear infinite;
+  animation-delay: 10s;
+}
+@keyframes fly4 {
+  from {
+    right: -50px;
+  }
+  to {
+    right: 110%;
+  }
+}
+
+.cloud5 {
+  right: -50px;
+  animation: fly5 35s linear infinite;
+  animation-delay: 14s;
+}
+@keyframes fly5 {
+  from {
+    right: -50px;
+  }
+  to {
     right: 110%;
   }
 }
