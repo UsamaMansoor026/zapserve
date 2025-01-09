@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  max-width: inherit;
+}
+
 /* Clouds */
 .flying-cloud {
   position: absolute;
@@ -92,7 +96,7 @@ body {
 }
 
 .global-padding {
-  @apply px-16 md:px-8;
+  @apply px-16 md:px-8 xsm:px-4;
 }
 
 .header-padd-y {
@@ -125,8 +129,15 @@ li.active {
   }
 }
 
-/* Hero Section */
 .hero {
   @apply bg-primary text-white duration-200;
   min-height: 100vh;
+}
+
+.domainSearchBox {
+  box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.15);
+}
+
+.featureCard:hover div > h5 {
+  @apply text-primary;
 }

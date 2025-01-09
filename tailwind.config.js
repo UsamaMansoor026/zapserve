@@ -5,9 +5,12 @@ export default {
     extend: {
       colors: {
         primary: "#1c66de",
+        headingColor: "#303030",
+        textColor: "#707070",
       },
       screens: {
-        sm: { max: "570px" },
+        xsm: { max: "570px" },
+        sm: { max: "768px" },
         md: { max: "991px" },
       },
     },
