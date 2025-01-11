@@ -7,7 +7,7 @@ import SectionHeading from "./SectionHeading";
 const Hero = () => {
   return (
     <>
-      <section className="hero global-padding relative overflow-x-hidden pt-16 pb-[90px]">
+      <section className="hero global-padding relative overflow-hidden pt-16 pb-[90px]">
         {/* Flying Clouds */}
         <div className="absolute top-10 w-full">
           <img src={clouds.cloud1} alt="" className="flying-cloud cloud1" />
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
 
         {/* Pattern */}
-        <div className="absolute left-0 r-ght-0 bottom-[-15px] w-full">
+        <div className="absolute left-0 r-ght-0 bottom-[-5px] w-full">
           <img src={herobot} alt="Wavy pattern" className="w-full" />
         </div>
       </section>

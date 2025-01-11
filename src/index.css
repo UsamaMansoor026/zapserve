@@ -131,7 +131,6 @@ li.active {
 
 .hero {
   @apply bg-primary text-white duration-200;
-  min-height: 100vh;
 }
 
 .domainSearchBox {

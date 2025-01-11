@@ -60,3 +60,42 @@ export const features = [
     desc: "Don't be distracted by criticism. Remember the only taste of success some people.",
   },
 ];
+
+export const pricing = [
+  {
+    id: 1,
+    saveupto: "50%",
+    price: 1.99,
+    plan: "standard",
+    features: [
+      "Unlimited Number of Websites",
+      "Unlimited Email Accounts",
+      "Unlimited Bandwidth",
+      "2x Processing Power & Money",
+    ],
+  },
+  {
+    id: 2,
+    saveupto: "70%",
+    price: 3.99,
+    plan: "advanced",
+    features: [
+      "Unlimited Number of Websites",
+      "Unlimited Email Accounts",
+      "Unlimited Bandwidth",
+      "2x Processing Power & Money",
+    ],
+  },
+  {
+    id: 3,
+    saveupto: "50%",
+    price: 7.99,
+    plan: "unlimited",
+    features: [
+      "Unlimited Number of Websites",
+      "Unlimited Email Accounts",
+      "Unlimited Bandwidth",
+      "2x Processing Power & Money",
+    ],
+  },
+];
